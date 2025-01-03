@@ -1,4 +1,4 @@
 ---
 title: Hello World
-layout: "header.html"
+layout: "header.njk"
 ---
