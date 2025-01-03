@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npm run serve:eleventy && npm run serve:css",
     "serve:eleventy": "npx eleventy --serve",
-    "serve:css": "tailwindcss -i _includes/assets/index.css -o _site/assets/css/tailwind.css --watch --postcss"
+    "serve:css": "tailwindcss -i assets/index.css -o _site/assets/css/tailwind.css --watch --postcss"
   },
   "author": "Marvin Reissohn",
   "license": "MIT",
