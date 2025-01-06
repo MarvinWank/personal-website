@@ -1,0 +1,8 @@
+{% macro link(href,text) %}
+
+    <a href="#{{href}}" class="uppercase justify-center text-center text-4xl md:text-4xl lg:text-5xl flex">
+        {{text}}
+        <object class="w-8 cursor-pointer" data="{{ '/img/down-arrow.svg' | url }}"/>
+    </a>
+
+{% endmacro %}
