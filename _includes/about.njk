@@ -1,5 +1,5 @@
-<div class="h-full lg:h-3/5 bg-slate-200" id="about">
-    <div class="flex flex-col py-8 lg:py-12 xl:py-20 px-8 lg:px-12 xl:px-28 md:text-left h-full">
+<div class="h-full lg:h-3/5 xl:h-auto bg-slate-200" id="about">
+    <div class="flex flex-col py-8 lg:py-12 xl:py-20 px-8 lg:px-12 xl:px-28 md:text-left h-full xl:h-auto">
         <h3
             class="text-slate-500 text-4xl md:text-5xl uppercase text-center lg:text-left">
             About me
@@ -7,7 +7,7 @@
         <div class="flex flex-col justify-around h-full lg:h-auto lg:flex-row lg:mt-10 lg:gap-8">
 
             <div class="mt-5 lg:mt-0 flex">
-                <img class="rounded-full mx-auto lg:mx-0 w-3/5 lg:w-auto lg:h-full xl:w-3/5" src="{{ '/img/me.png' | url }}"></img>
+                <img class="rounded-full mx-auto lg:mx-0 w-3/5 lg:w-auto lg:h-full xl:w-auto xl:h-2/5" src="{{ '/img/me.png' | url }}"></img>
             </div>
 
             <div class="mt-4 lg:mt-0">
@@ -29,7 +29,7 @@
                 </p>
 
                 <div class="hidden lg:block xl:hidden mt-12 text-center">
-                    {% link "techstack", "My Techstack" %}
+                    {% link "techstack", "Techstack" %}
                 </div>
 
                 <div class="hidden xl:block">
@@ -39,7 +39,7 @@
             </div>
 
             <div class="lg:hidden text-center">
-                {% link "techstack", "My Techstack" %}
+                {% link "techstack", "Techstack" %}
             </div>
         </div>
     </div>
