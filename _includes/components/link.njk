@@ -1,8 +1,12 @@
-{% macro link(href,text) %}
+<a href="#{{href}}" class="uppercase justify-center text-center text-4xl md:text-4xl lg:text-5xl flex text-red-400">
+    {{text}}
 
-    <a href="#{{href}}" class="uppercase justify-center text-center text-4xl md:text-4xl lg:text-5xl flex">
-        {{text}}
-        <object class="w-8 cursor-pointer" data="{{ '/img/down-arrow.svg' | url }}"/>
-    </a>
+    <div class="w-8 flex ">
+        <svg viewBox="0 0 1024 1024" class="fill-red-400" version="1.1"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z"/>
+        </svg>
+    </div>
 
-{% endmacro %}
+
+</a>

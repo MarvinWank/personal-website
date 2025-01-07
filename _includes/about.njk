@@ -1,15 +1,15 @@
 <div class="h-full lg:h-3/5 bg-slate-200">
-    <div class="py-4 lg:py-20 px-8 md:px-12 lg:px-28 md:text-left h-full">
+    <div class="flex flex-col py-4 lg:py-12 xl:py-20 px-8 lg:px-12 xl:px-28 md:text-left h-full">
         <h3 id="about"
-            class="text-slate-500 text-4xl md:text-4xl lg:text-5xl mt-5 md:mt-0 uppercase text-center lg:text-left">
+            class="text-slate-500 text-4xl md:text-5xl mt-5 md:mt-0 uppercase text-center lg:text-left">
             About me</h3>
-        <div class="lg:flex lg:mt-10">
+        <div class="flex flex-col justify-around h-full lg:h-auto lg:flex-row lg:mt-10 lg:gap-8">
 
             <div class="mt-5 lg:mt-0 flex">
-                <img class="rounded-full mx-auto lg:mx-0 w-3/5 lg:w-3/5" src="{{ '/img/me.png' | url }}"></img>
+                <img class="rounded-full mx-auto lg:mx-0 w-3/5 lg:w-auto lg:h-full xl:w-3/5" src="{{ '/img/me.png' | url }}"></img>
             </div>
 
-            <div class="mt-4">
+            <div class="mt-4 lg:mt-0">
                 <p class="text-justify">
                     Being Fullstack Engineer transcends the buzzword for me. I am passionate about all stages of a
                     software's
@@ -27,12 +27,13 @@
                     at every stage and layer.
                 </p>
 
-                <div class="mt-5 text-center">
-                    <a href="#tech" class="uppercase justify-center text-center text-4xl md:text-4xl lg:text-5xl flex">
-                        My Techstack
-                        <object class="w-8 cursor-pointer" data="{{ '/img/down-arrow.svg' | url }}"></object>
-                    </a>
+                <div class="hidden lg:block xl:hidden mt-12 text-center">
+                    {% link "tech", "My Techstack" %}
                 </div>
+            </div>
+
+            <div class="lg:hidden text-center">
+                {% link "tech", "My Techstack" %}
             </div>
         </div>
     </div>
