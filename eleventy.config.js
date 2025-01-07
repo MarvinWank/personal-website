@@ -10,10 +10,13 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("img");
 
     eleventyConfig.addShortcode("link", (href, text) => {
-        const templatePath = path.join(__dirname, "_includes", "components", "link.njk");
-        const template = fs.readFileSync(templatePath, "utf-8");
-
+        const template = fs.readFileSync(path.join(__dirname, "_includes", "components", "link.njk"), "utf-8");
         return nunjucks.renderString(template, { href, text });
+    });
+
+    eleventyConfig.addShortcode("tech_item", (image, text, alt) => {
+        const template = fs.readFileSync(path.join(__dirname, "_includes", "components", "techstack-item.njk"), "utf-8");
+        return nunjucks.renderString(template, { image, text, alt });
     });
 
     // // Copy `css/fonts/` to `_site/css/fonts`
