@@ -12,6 +12,6 @@ phases:
 
 artifacts:
   files:
-    - '_site/**/*'  # Include all files
-  base-directory: dist
+    - '**/*'  # Include all files
+  base-directory: _site
   discard-paths: yes
