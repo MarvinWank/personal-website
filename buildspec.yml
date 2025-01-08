@@ -14,4 +14,3 @@ artifacts:
   files:
     - '**/*'  # Include all files
   base-directory: _site
-  discard-paths: yes
